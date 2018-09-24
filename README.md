@@ -9,4 +9,4 @@ docker
 `docker build -t shawrkbait/ks-livecd docker`
 2. Edit the ks-live.cfg and ansible site.yml to your liking
 3. Build the image
-`./build.sh`
+`./build.sh <iso label>`
