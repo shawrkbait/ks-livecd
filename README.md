@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/shawrkbait/ks-livecd.svg?branch=master)](https://travis-ci.org/shawrkbait/ks-livecd) 
 # ks-livecd
 Generate a centos7 live cd from a kickstart file and perform post-installation steps with ansible.
 
