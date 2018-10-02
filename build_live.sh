@@ -1,3 +1,3 @@
 #!/bin/bash
 iso_name=$1
-docker run -it --privileged --rm -v /tmp:/tmp -v $(pwd):/build shawrkbait/ks-livecd -f $iso_name --cache=/tmp/centcache
+docker run -it --privileged --rm -v /tmp/centcache:/tmp/centcache -v $(pwd):/build shawrkbait/ks-livecd $iso_name --cache=/tmp/centcache
