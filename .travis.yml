@@ -7,4 +7,4 @@ before_install:
   - docker build -t shawrkbait/ks-livecd docker
 
 script:
-  - ./build.sh test
+  - ./build_live.sh test
