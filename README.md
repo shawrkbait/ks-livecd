@@ -17,5 +17,5 @@ docker pull shawrkbait/ks-livecd || docker build -t shawrkbait/ks-livecd docker
 ```
 Or manually
 ```
-docker run -it --rm --privileged -v /tmp/centcache:/tmp/centcache -v $(pwd)/docker:/build shawrkbait/ks-livecd $iso_label
+docker run -it --rm --privileged -v $(pwd):/build shawrkbait/ks-livecd $iso_label
 ```
