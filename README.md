@@ -6,8 +6,16 @@ Generate a centos7 live cd from a kickstart file and perform post-installation s
 docker
 
 ## Steps
-1. Build the docker image
-`docker build -t shawrkbait/ks-livecd docker`
-2. Edit the ks-live.cfg and ansible site.yml to your liking
-3. Build the image
-`./build.sh <iso label>`
+1. Build or pull the docker image
+```
+docker pull shawrkbait/ks-livecd || docker build -t shawrkbait/ks-livecd docker
+```
+2. Edit ks-live.cfg and site.yml to your liking
+3. Build the live image
+```
+./build_live.sh $iso_label
+```
+Or manually
+```
+docker run -it --rm --privileged -v /tmp/centcache:/tmp/centcache -v $(pwd)/docker:/build shawrkbait/ks-livecd $iso_label
+```

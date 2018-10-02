@@ -1,10 +1,1 @@
-- hosts: post-nochroot
-  gather_facts: false
-
-- hosts: post
-  gather_facts: false
-  tasks:
-  - copy:
-      dest: "/etc/motd"
-      content: |
-        Hello World! I am LIVE!
+docker/site.yml
