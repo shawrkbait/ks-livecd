@@ -5,6 +5,10 @@ services:
 
 before_install:
   - docker build -t shawrkbait/ks-livecd docker
+  - sudo mknod /dev/loop1 b 7 1
+  - sudo mknod /dev/loop2 b 7 2
+  - sudo mknod /dev/loop3 b 7 3
+  - sudo mknod /dev/loop4 b 7 4
 
 script:
   - ./build_live.sh test
